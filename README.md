@@ -1,12 +1,12 @@
-﻿# Verificar número del DNI
+# Verificar número del DNI
 
-Comprueba si la letra de control de un DNI o NIE es correcta.
+Pequeña herramienta: introduces DNI o NIE y comprueba si la letra de control es la buena.
 
 ## Qué hace
 
-- Acepta DNI (8 dígitos + letra) o NIE (X/Y/Z + 7 dígitos + letra)
+- Acepta DNI (`12345678Z`) y NIE (`X1234567L`)
 - Calcula la letra con el módulo 23
-- Indica si el formato y la letra son válidos
+- Avisa si el formato o la letra fallan
 - Guía en `guia.html`
 
 ## Cómo probarlo
@@ -17,12 +17,11 @@ Demo: https://moussijoelle.github.io/Verificar-n-mero-del-DNI/
 
 ## Cómo lo construí
 
-- HTML + JavaScript (`js/`)
-- Tabla de letras `TRWAGMYFPDXBNJZSQVHLCKE`
+JavaScript en `js/` con la tabla `TRWAGMYFPDXBNJZSQVHLCKE`. HTML sencillo de formulario.
 
 ## Cómo verificarlo
 
-Sin tests. Pruebo un DNI correcto y otro con letra incorrecta.
+Uno correcto, uno con letra inventada y un formato raro.
 
 ---
 
